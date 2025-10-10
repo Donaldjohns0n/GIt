@@ -94,6 +94,21 @@ class SummaryResult:
     summary: str
     citations: List[List[int]]
 
+    def as_json(self) -> dict:
+        """Return a JSON-serialisable representation of the summary.
+
+        The nested citation lists are copied so that callers can modify the
+        resulting structure without affecting the original, frozen dataclass
+        instance.  This helps maintain immutability guarantees while still
+        providing a convenient way to serialise the result.
+        """
+
+        return {
+            "title": self.title,
+            "summary": self.summary,
+            "citations": [list(citation) for citation in self.citations],
+        }
+
 
 class ResearchSummaryGenerator:
     """Produce JSON-compatible summaries from research bullet points."""
