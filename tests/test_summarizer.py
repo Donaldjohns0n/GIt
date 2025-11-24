@@ -1,6 +1,7 @@
 """Unit tests for the research summary generator."""
 
 from src import ResearchSummaryGenerator
+from src import SummaryResult
 
 
 def word_count(text: str) -> int:
@@ -54,3 +55,37 @@ def test_padding_uses_all_indices_for_citations():
     all_indices = {1}
     for citation in result.citations:
         assert set(citation) == all_indices
+
+
+def test_summary_result_as_json_returns_deep_copy():
+    result = SummaryResult(
+        title="Example",
+        summary="Example summary.",
+        citations=[[1, 2], [2]],
+    )
+
+    payload = result.as_json()
+
+    assert payload == {
+        "title": "Example",
+        "summary": "Example summary.",
+        "citations": [[1, 2], [2]],
+    }
+
+    payload["citations"][0].append(3)
+
+    # The dataclass should remain unchanged despite modifications to the
+    # returned payload.
+    assert result.citations == [[1, 2], [2]]
+
+
+def test_summary_result_keeps_nested_lists_mutable():
+    result = SummaryResult(
+        title="Mutable",
+        summary="Example",
+        citations=[[1], [2, 3]],
+    )
+
+    result.citations[0].append(4)
+
+    assert result.citations == [[1, 4], [2, 3]]
