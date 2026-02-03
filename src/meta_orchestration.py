@@ -104,7 +104,8 @@ class EmergentTacticDetector:
             return True
 
         if tactic in self._emergent:
-            self._emergent[tactic].append(phase)
+            if phase not in self._emergent[tactic]:
+                self._emergent[tactic].append(phase)
         return False
 
     def emergent_tactics(self) -> Dict[str, List[str]]:
@@ -271,8 +272,17 @@ class BrowserOrchestrationProtocol:
                 platform=platform,
                 context_summary=context_snapshot,
             )
-            # open_tab already logged the transition; return that entry
-            return self._history[-1]
+            # open_tab logs the "open" transition; also record the intended action.
+            if action == "open":
+                return self._history[-1]
+            transition = BrowserTransition(
+                tab_id=state.tab_id,
+                platform=platform,
+                action=action,
+                context_snapshot=context_snapshot,
+            )
+            self._history.append(transition)
+            return transition
 
         state = self._tabs[tab_id]
         state.context_summary = context_snapshot
