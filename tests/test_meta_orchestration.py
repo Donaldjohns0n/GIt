@@ -96,8 +96,17 @@ def test_emergent_tactic_detector_flags_new_tactic():
         phase="Phase 2",
         tactic="context-triangulation",
     ) is True
+    assert detector.record(
+        phase="Phase 3",
+        tactic="context-triangulation",
+    ) is False
+    assert detector.record(
+        phase="Phase 3",
+        tactic="context-triangulation",
+    ) is False
     assert detector.emergent_tactics()["context-triangulation"] == [
         "Phase 2",
+        "Phase 3",
     ]
 
 
