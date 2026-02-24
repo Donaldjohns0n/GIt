@@ -104,7 +104,9 @@ class EmergentTacticDetector:
             return True
 
         if tactic in self._emergent:
-            self._emergent[tactic].append(phase)
+            phases = self._emergent[tactic]
+            if phase not in phases:
+                phases.append(phase)
         return False
 
     def emergent_tactics(self) -> Dict[str, List[str]]:
