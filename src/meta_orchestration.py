@@ -271,6 +271,7 @@ class BrowserOrchestrationProtocol:
                 platform=platform,
                 context_summary=context_snapshot,
             )
+
             # open_tab already logged the transition; return that entry
             return self._history[-1]
 
