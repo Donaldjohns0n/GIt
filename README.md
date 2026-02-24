@@ -176,6 +176,7 @@ The framework codifies eleven agent personas used across experiment phases:
 | --- | --- |
 | [`docs/meta_orchestration_framework.md`](docs/meta_orchestration_framework.md) | Comprehensive unified framework reference including role table, plan-of-work matrix, paradox catalog, and audit trail expectations |
 | [`docs/meta_orchestration_plan.md`](docs/meta_orchestration_plan.md) | Experiment planning dossier with phase-by-phase objectives, counter-intuitive discovery targets, and audit commitments |
+| [`docs/csos_case_study.md`](docs/csos_case_study.md) | System engineering case study: Ontological Stabilization of the Cognitive Sovereignty Operating System (CSOS) — covers the four foundational axioms, audit remediation ledger, identity anchoring, Concept Ingestion Protocol, and Hydra multi-agent framework |
 | [`docs/notion_meta_perspectives.md`](docs/notion_meta_perspectives.md) | Notion-ready perspective matrix for the four orchestration components, with prompts for Notion AI integration |
 | [`docs/task_catalog.md`](docs/task_catalog.md) | Thematic catalog of orchestration initiatives, knowledge extraction workstreams, and open coordination questions |
 
