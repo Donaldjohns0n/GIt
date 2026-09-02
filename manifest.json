@@ -49,6 +49,21 @@
       "post_sha256": "62c9d5eb7fd394745bcfedb60b2a66327103c5a5c552997f2eda4addd9b9be7b"
     },
     {
+      "old_path": null,
+      "new_path": "failure-doctrine.md",
+      "status": "created",
+      "pre_sha256": null,
+      "post_sha256": "32846f0873d13f8a2ab1502bb81eb59dbd16b5badf6005cf34e72890fa754e77"
+    },
+    {
+      "old_path": null,
+      "new_path": "manifest.json",
+      "status": "created",
+      "pre_sha256": null,
+      "post_sha256": null,
+      "note": "self-hash impossible"
+    },
+    {
       "old_path": "src/meta_orchestration.py",
       "new_path": "meta_orchestration.py",
       "status": "moved",
@@ -106,6 +121,13 @@
       "pre_sha256": "1ae5abc3e9538307c9e456488d2ba489d5b4332d1afa1833d6a75daa871718d5",
       "post_sha256": "0d6210e8021461b714d2372530110c90cefb10910c0a3b815e577e283ac6b063",
       "edited_note": "imports rewritten from src to summarizer (fix commit)"
+    },
+    {
+      "old_path": null,
+      "new_path": "tickets-flattening.md",
+      "status": "created",
+      "pre_sha256": null,
+      "post_sha256": "ae8171d397be16133998b0f323cfd90154962914dca9236fa7f635884ea36614"
     },
     {
       "old_path": "src/__init__.py",
