@@ -1,7 +1,7 @@
 """Unit tests for the research summary generator."""
 
-from src import ResearchSummaryGenerator
-from src import SummaryResult
+from summarizer import ResearchSummaryGenerator
+from summarizer import SummaryResult
 
 
 def word_count(text: str) -> int:

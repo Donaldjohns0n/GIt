@@ -11,7 +11,7 @@ This dossier defines the initial research and orchestration blueprint for the "R
   - Avoid execution of automated tests until explicitly authorized.
   - Record paradox observations and counter-intuitive findings in a running log.
 - **Tooling Interfaces:**
-  - Access repository knowledge base (docs/, src/, tests/).
+  - Access repository knowledge base (the flat root: docs, modules, and tests; see manifest.json for former paths).
   - Interface stubs for simulated agents (ChatGPT, Claude, Gemini) to be detailed in Phase 2 planning.
 
 ## Planning Methodology
@@ -70,7 +70,7 @@ This dossier defines the initial research and orchestration blueprint for the "R
 - Investigate whether intentionally constraining agent autonomy boosts paradox detection accuracy.
 
 ## Next Steps Prior to Execution
-1. Elaborate template drafts for each phase within docs/ subdirectories.
+1. Elaborate template drafts for each phase as root-level documents.
 2. Prototype logging structures without running pytest or flake8.
 3. Prepare instructions for invoking audit_critic prior to any future commits involving executable code changes.
 4. Cross-reference the unified framework (`meta_orchestration_framework.md`) to ensure implementation fidelity when the research agent is instantiated.

@@ -64,7 +64,7 @@ cursor-agent --resume="chat-id-here"
 
 ## Meta-Orchestration Framework
 
-The `src/` package provides a deployable orchestration system that consolidates four experiment iterations:
+The root modules `meta_orchestration.py` and `summarizer.py` provide a deployable orchestration system that consolidates four experiment iterations:
 
 - **V1 — Research Agent Implementation:** Phase-aware execution engine with detailed governance hooks.
 - **V2 — Strategic Architecture:** Component model aligning context extraction, workflow synthesis, audit review, and prompt stewardship.
@@ -175,21 +175,21 @@ The framework codifies eleven agent personas used across experiment phases:
 
 | File | Description |
 | --- | --- |
-| [`docs/meta_orchestration_framework.md`](docs/meta_orchestration_framework.md) | Comprehensive unified framework reference including role table, plan-of-work matrix, paradox catalog, and audit trail expectations |
-| [`docs/meta_orchestration_plan.md`](docs/meta_orchestration_plan.md) | Experiment planning dossier with phase-by-phase objectives, counter-intuitive discovery targets, and audit commitments |
-| [`docs/csos_case_study.md`](docs/csos_case_study.md) | System engineering case study: Ontological Stabilization of the Cognitive Sovereignty Operating System (CSOS) — covers the four foundational axioms, audit remediation ledger, identity anchoring, Concept Ingestion Protocol, and Hydra multi-agent framework |
-| [`docs/notion_meta_perspectives.md`](docs/notion_meta_perspectives.md) | Notion-ready perspective matrix for the four orchestration components, with prompts for Notion AI integration |
-| [`docs/task_catalog.md`](docs/task_catalog.md) | Thematic catalog of orchestration initiatives, knowledge extraction workstreams, and open coordination questions |
+| [`meta_orchestration_framework.md`](meta_orchestration_framework.md) | Comprehensive unified framework reference including role table, plan-of-work matrix, paradox catalog, and audit trail expectations |
+| [`meta_orchestration_plan.md`](meta_orchestration_plan.md) | Experiment planning dossier with phase-by-phase objectives, counter-intuitive discovery targets, and audit commitments |
+| [`csos_case_study.md`](csos_case_study.md) | System engineering case study: Ontological Stabilization of the Cognitive Sovereignty Operating System (CSOS) — covers the four foundational axioms, audit remediation ledger, identity anchoring, Concept Ingestion Protocol, and Hydra multi-agent framework |
+| [`notion_meta_perspectives.md`](notion_meta_perspectives.md) | Notion-ready perspective matrix for the four orchestration components, with prompts for Notion AI integration |
+| [`task_catalog.md`](task_catalog.md) | Thematic catalog of orchestration initiatives, knowledge extraction workstreams, and open coordination questions |
 
 ---
 
 ## Running Tests
 
 ```bash
-pytest tests/ -v
+pytest -v
 ```
 
-All tests are in `tests/` and cover the meta-orchestration framework end-to-end, including the `BrowserOrchestrationProtocol.log_event` behavior, role responsibility unification, and the research summarizer.
+The root-level `test_*.py` modules cover the meta-orchestration framework end-to-end, including the `BrowserOrchestrationProtocol.log_event` behavior, role responsibility unification, and the research summarizer.
 
 ---
 
