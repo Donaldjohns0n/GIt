@@ -1,0 +1,140 @@
+{
+  "operation": {
+    "name": "repository-flattening",
+    "repo": "Donaldjohns0n/GIt",
+    "date": "2026-09-02",
+    "branch": "claude/agent-execution-negative-constraints-uj7lpz",
+    "base_commit": "b30885c",
+    "pure_move_commit": "a82fbeb",
+    "fix_commit": "6a1053c",
+    "ledger": "ai-agents-data-logs/ledger.jsonl session exec-20260902-212320-e4188d",
+    "doctrine": "failure-doctrine.md",
+    "tickets": "tickets-flattening.md"
+  },
+  "files": [
+    {
+      "old_path": ".gitignore",
+      "new_path": ".gitignore",
+      "status": "unchanged",
+      "pre_sha256": "862263fa1f46c20f0d1e4dac5ffcc75abd55c08211b2c3864c5f8764b9d87793",
+      "post_sha256": "862263fa1f46c20f0d1e4dac5ffcc75abd55c08211b2c3864c5f8764b9d87793"
+    },
+    {
+      "old_path": "Agent",
+      "new_path": "Agent",
+      "status": "unchanged",
+      "pre_sha256": "8aaaea748e84cbadc14f041466f9f4e16c09868ce8e3144333aa392a7a2c5935",
+      "post_sha256": "8aaaea748e84cbadc14f041466f9f4e16c09868ce8e3144333aa392a7a2c5935"
+    },
+    {
+      "old_path": "README.md",
+      "new_path": "README.md",
+      "status": "edited",
+      "pre_sha256": "ff2f3c227b248df7abea13e4c25c6fda44fd9065eb8485b2d32b8a8e4bf2ea4b",
+      "post_sha256": "3aaef05a25efb0400da7e6c8297ea2b2bee2d5e8b2a3019d5e36d0140908388f",
+      "edited_note": "path references updated for flat layout (fix commit)"
+    },
+    {
+      "old_path": "conftest.py",
+      "new_path": "conftest.py",
+      "status": "unchanged",
+      "pre_sha256": "3f854084d693680c89f71fbae28d4e37b4eeb8674d9d982587a5f5631ee3da3b",
+      "post_sha256": "3f854084d693680c89f71fbae28d4e37b4eeb8674d9d982587a5f5631ee3da3b"
+    },
+    {
+      "old_path": "docs/csos_case_study.md",
+      "new_path": "csos_case_study.md",
+      "status": "moved",
+      "pre_sha256": "62c9d5eb7fd394745bcfedb60b2a66327103c5a5c552997f2eda4addd9b9be7b",
+      "post_sha256": "62c9d5eb7fd394745bcfedb60b2a66327103c5a5c552997f2eda4addd9b9be7b"
+    },
+    {
+      "old_path": "src/meta_orchestration.py",
+      "new_path": "meta_orchestration.py",
+      "status": "moved",
+      "pre_sha256": "7a8f09ceef8acfc8fb8d475512b8a2e38fb30117f69d73f86caf2cfc57624671",
+      "post_sha256": "7a8f09ceef8acfc8fb8d475512b8a2e38fb30117f69d73f86caf2cfc57624671"
+    },
+    {
+      "old_path": "docs/meta_orchestration_framework.md",
+      "new_path": "meta_orchestration_framework.md",
+      "status": "moved",
+      "pre_sha256": "a640b09a16a5cc7e0ff4c1dcfc8dd2192f09fb7c434ad804115ddbbce71dbb77",
+      "post_sha256": "a640b09a16a5cc7e0ff4c1dcfc8dd2192f09fb7c434ad804115ddbbce71dbb77"
+    },
+    {
+      "old_path": "docs/meta_orchestration_plan.md",
+      "new_path": "meta_orchestration_plan.md",
+      "status": "edited",
+      "pre_sha256": "b128658d9ae8afa7097e893736015452b0ed4cb245c60c47f9be121436708acf",
+      "post_sha256": "c7454f8ceaf5904c6fb4b42897497d64e45983b237d5992cce8950205283b4f0",
+      "edited_note": "path references updated for flat layout (fix commit)"
+    },
+    {
+      "old_path": "docs/notion_meta_perspectives.md",
+      "new_path": "notion_meta_perspectives.md",
+      "status": "moved",
+      "pre_sha256": "f20de00fde31156efa0ffd4b45f923f60b0327fcb67a606feb0ad0e86c709092",
+      "post_sha256": "f20de00fde31156efa0ffd4b45f923f60b0327fcb67a606feb0ad0e86c709092"
+    },
+    {
+      "old_path": "src/summarizer.py",
+      "new_path": "summarizer.py",
+      "status": "moved",
+      "pre_sha256": "a5f9a871f365da34bc3a498e60c4686a7227e6cf46b83d8da29850f1bd0cdc8b",
+      "post_sha256": "a5f9a871f365da34bc3a498e60c4686a7227e6cf46b83d8da29850f1bd0cdc8b"
+    },
+    {
+      "old_path": "docs/task_catalog.md",
+      "new_path": "task_catalog.md",
+      "status": "moved",
+      "pre_sha256": "d2079c5f1d5de24cb057b42473708eaa55976b798115f1d6b5e140512c776a51",
+      "post_sha256": "d2079c5f1d5de24cb057b42473708eaa55976b798115f1d6b5e140512c776a51"
+    },
+    {
+      "old_path": "tests/test_meta_orchestration.py",
+      "new_path": "test_meta_orchestration.py",
+      "status": "edited",
+      "pre_sha256": "683036cb3bf4f103f6c015ceeff2a2c00ec8336ef434e07758723e4a3fdecdd2",
+      "post_sha256": "7246aa1b19c3a41606c289f28aba04d87afae7d839502a9b9799352570b26bf3",
+      "edited_note": "import rewritten from src to meta_orchestration (fix commit)"
+    },
+    {
+      "old_path": "tests/test_summarizer.py",
+      "new_path": "test_summarizer.py",
+      "status": "edited",
+      "pre_sha256": "1ae5abc3e9538307c9e456488d2ba489d5b4332d1afa1833d6a75daa871718d5",
+      "post_sha256": "0d6210e8021461b714d2372530110c90cefb10910c0a3b815e577e283ac6b063",
+      "edited_note": "imports rewritten from src to summarizer (fix commit)"
+    },
+    {
+      "old_path": "src/__init__.py",
+      "new_path": null,
+      "pre_sha256": "87dea91a7acefd02dae840d0cdd66518f6a41f884c5a29df902329f2f8bfd630",
+      "post_sha256": null,
+      "status": "deleted",
+      "ticket": "T-02",
+      "note": "package dissolved; re-export surface recoverable at commit a82fbeb"
+    }
+  ],
+  "kept_directories": [
+    {
+      "path": ".git",
+      "ticket": "T-KEEP-01"
+    }
+  ],
+  "directories_removed": [
+    {
+      "path": "docs",
+      "ticket": "T-01"
+    },
+    {
+      "path": "src",
+      "ticket": "T-02"
+    },
+    {
+      "path": "tests",
+      "ticket": "T-03"
+    }
+  ]
+}
